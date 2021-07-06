@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title>Deeva</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<img id="needle" src="image 18.jpg" width="500" height="600">
+<img id="ffffcc"src="ffffcc.png" width="400" height="600">
+<img id="deevalogo"src="deevalogo.png" width="100">
+<p id="stay"></p>
+<form id="loginf">
+	<label for="username"></label>
+	<input type="text" id="username" name="username" placeholder="UserName">
+	<!-- Password field -->
+	<input type="password" id="password" placeholder="Enter password">
+<!-- An element to toggle between password visibility -->
+<input type="checkbox" id="show" onclick="myFunctions()">
+<p id="showpassword">Show Password</p>
+	<p id="forgot"><a href="https://stackoverflow.com/questions/8306890/make-a-p-tag-into-a-link">Forgot Something!</a></p>
+	<button type="button" id="login" onclick="myFunction()">Login</button>
+</form>
+<!-- Rounded switch -->
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+  <button type="button" id="loginslider" onclick="logint()">Login</button>
+  <button type="button" id="registerslider" onclick="registert()">Register</button>
+</label>
+<p id="socials">Don't have time to fill the details?<br>
+Aah! That's okay, just login through socials and Shoppp!😉😇</p>
+<img id="facebook" src="facebooklogocomplete.png" width="80">
+<img id="google" src="googlelogo.png" width="40">
+<script>
+	function myFunction(){
+		window.location.href = "file:///D:/Coding/Deeva/navbar.html";
+	}
+	document.getElementById("stay").innerHTML = "U just let in.<br>We'll make sure u stay in there!😇";
+	function myFunctions() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+ var k=document.getElementById("registerf");
+ function logint(){
+	document.getElementById("loginf").style.left = "-400px";
+	document.getElementById("registerf").style.left = "50px";
+}
+ function registert(){
+	j.style.left = "50px";
+	k.style.left = "450px";
+}
+</script>
+</body>
+</html>
